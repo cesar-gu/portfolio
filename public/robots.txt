@@ -1,0 +1,5 @@
+# GitHub Pages
+User-agent: *
+Allow: /
+
+Sitemap: https://cesargupe.github.io/sitemap.xml
