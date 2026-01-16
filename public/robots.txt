@@ -1,5 +1,9 @@
-# GitHub Pages
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-Sitemap: https://cesar-gu.github.io/sitemap.xml
+# Sitemap location
+Sitemap: https://cesar-gu.github.io/portfolio/sitemap.xml
+
+# Crawl delay (opcional, para respetar servidor)
+Crawl-delay: 1
