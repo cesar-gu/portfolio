@@ -1,0 +1,252 @@
+{
+  "basics": {
+    "name": "César Gutiérrez",
+    "brandName": "cesargú",
+    "career": "Software Engineer",
+    "specialization": "Frontend Developer",
+    "image": "/images/profile.webp",
+    "email": "cesargupe95@gmail.com",
+    "summary": "Soy desarrollador Frontend especializado en Angular y Vue con más de 10 años de experiencia creando aplicaciones web modernas, movido siempre por la curiosidad y el amor al código limpio.",
+    "summaryShort": "Desarrollador Frontend especializado en Angular y Vue con 10+ años de experiencia.",
+    "url": "https://cesargupe.github.io",
+    "location": {
+      "address": "León",
+      "country": "Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "cesargupe",
+        "url": "https://www.linkedin.com/in/cesargupe/"
+      },
+      {
+        "network": "GitHub",
+        "username": "cesar-gu",
+        "url": "https://github.com/cesar-gu"
+      },
+      {
+        "network": "GitLab",
+        "username": "cesargupe",
+        "url": "https://gitlab.com/cesargupe"
+      }
+    ],
+    "featuredTechs": ["Angular", "Vue", "TypeScript", "Vanilla JS"]
+  },
+  "work": [
+    {
+      "name": "TuLotero",
+      "position": "Desarrollador Front-end",
+      "startDate": "2024-10",
+      "endDate": "",
+      "summary": "Diseño y desarrollo de las distintas aplicaciones web que tiene la compañía.",
+      "highlights": [
+        "Desarrollo de aplicaciones web con Angular y TypeScript",
+        "Implementación de componentes reutilizables",
+        "Pruebas unitarias con Jest y E2E con Cypress",
+        "Uso de GitHub Copilot e IA para optimizar desarrollo"
+      ],
+      "location": "Madrid",
+      "url": "https://www.tulotero.es/",
+      "isCurrentRole": true
+    },
+    {
+      "name": "Nomasystems",
+      "position": "Ingeniero de Software",
+      "startDate": "2021-07",
+      "endDate": "2024-09",
+      "summary": "Desarrollo de un CMS de e-commerce para las cadenas de Inditex basado en tecnologías web.",
+      "highlights": [
+        "Desarrollo Frontend con Angular y Redux (NgRx)",
+        "Gestión de estado con RxJS",
+        "Autenticación JWT",
+        "Componentes con Angular Material",
+        "Estilos con PostCSS y SASS",
+        "Testing con Jest"
+      ],
+      "location": "A Coruña",
+      "isCurrentRole": false
+    },
+    {
+      "name": "FunPoint",
+      "position": "Cofundador e Ingeniero de Software",
+      "startDate": "2021-02",
+      "endDate": "2023-12",
+      "summary": "Desarrollo de una plataforma multiplataforma para gestionar backoffice de puntos de ocio y aplicación móvil para promocionar lugares de ocio.",
+      "highlights": [
+        "Desarrollo web con Vue.js, Redux y TypeScript",
+        "Autenticación JWT",
+        "UI con Vuetify",
+        "Aplicación móvil con Flutter",
+        "Desarrollo backend con node.js y MongoDB"
+      ],
+      "location": "León",
+      "isCurrentRole": false
+    },
+    {
+      "name": "Alisys",
+      "position": "Ingeniero de Software",
+      "startDate": "2020-04",
+      "endDate": "2021-07",
+      "summary": "Desarrollo Frontend de aplicaciones web empresariales.",
+      "highlights": [
+        "Desarrollo con Angular y Redux (NgRx)",
+        "Gestión asincrónica con RxJS",
+        "Componentes UI (Angular Material, PrimeNG, Syncfusion)",
+        "Documentación OpenAPI",
+        "Estilos con CSS/SASS"
+      ],
+      "location": "Gijón",
+      "isCurrentRole": false
+    },
+    {
+      "name": "Universidad de León - Grupo ACTRES",
+      "position": "Desarrollador e Investigador",
+      "startDate": "2018-04",
+      "endDate": "2020-04",
+      "summary": "Desarrollo de aplicaciones web y plataformas. Investigación en Procesamiento del Lenguaje Natural (NLP) y lingüística computacional.",
+      "highlights": [
+        "Desarrollo web full-stack (Python, PHP, JavaScript)",
+        "Desarrollo de herramientas de análisis contrastivos léxico-gramatical",
+        "Aplicaciones de ayuda a la escritura para usuarios no lingüistas",
+        "Investigación en NLP y lingüística computacional",
+        "Tecnologías: Bootstrap, SQL"
+      ],
+      "location": "León",
+      "isCurrentRole": false
+    },
+    {
+      "name": "CorpusNet (Empresa Pública)",
+      "position": "Desarrollador Web",
+      "startDate": "2018-06",
+      "endDate": "2020-01",
+      "summary": "Desarrollo web de plataforma de excelencia para centralizar recursos entre universidades nacionales.",
+      "highlights": [
+        "Desarrollo Frontend con Angular y TypeScript",
+        "Diseño responsivo con CSS y Bootstrap",
+        "Backend con Node.js",
+        "Base de datos MongoDB",
+        "Aplicaciones orientadas a usuarios lingüistas",
+        "Arquitectura multiplataforma"
+      ],
+      "location": "León",
+      "url": "https://corpusnet.udy.es/",
+      "isCurrentRole": false
+    },
+    {
+      "name": "Proconsi",
+      "position": "Desarrollador de iOS",
+      "startDate": "2017-10",
+      "endDate": "2018-01",
+      "summary": "Desarrollo de la aplicación BuskBus León para iOS.",
+      "highlights": ["Desarrollo nativo iOS con Swift", "Arquitectura de aplicación móvil"],
+      "location": "León",
+      "isCurrentRole": false
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de León",
+      "url": "https://www.unileon.es/",
+      "area": "Ingeniería Informática",
+      "studyType": "Máster Oficial en Ingeniería Informática",
+      "startDate": "2017",
+      "endDate": "2019",
+      "score": "Habilitante",
+      "fileUrl": "/docs/tfg.pdf"
+    },
+    {
+      "institution": "Universidad de León",
+      "url": "https://www.unileon.es/",
+      "area": "Ingeniería de Software",
+      "studyType": "Grado en Ingeniería Informática",
+      "startDate": "2013",
+      "endDate": "2017",
+      "fileUrl": "/docs/tfg.pdf"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend Frameworks",
+      "keywords": ["Angular", "Vue.js", "Flutter", "Bootstrap"]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": ["TypeScript", "JavaScript", "Python", "Dart", "Shell"]
+    },
+    {
+      "name": "Concepts & Methodologies",
+      "keywords": ["Agile", "Git Flow", "Web Accessibility", "TDD", "SOLID Principles"]
+    },
+    {
+      "name": "State Management",
+      "keywords": ["Redux", "NgRx", "RxJS", "Vuex"]
+    },
+    {
+      "name": "Tools & DevOps",
+      "keywords": ["Git", "Docker", "GitHub Actions", "GitHub Copilot", "Jenkins"]
+    },
+    {
+      "name": "Testing",
+      "keywords": ["Jest", "Jasmine", "Karma", "Cypress", "Selenium"]
+    },
+    {
+      "name": "Styles & CSS",
+      "keywords": ["CSS3", "SASS", "PostCSS", "Responsive Design", "Web Animations"]
+    },
+    {
+      "name": "AI & Prompting",
+      "keywords": ["GitHub Copilot", "Prompt Engineering", "AI-assisted Development"]
+    },
+    {
+      "name": "Mobile Development",
+      "keywords": ["Flutter", "Swift", "Ionic"]
+    }
+  ],
+  "knownTechs": [
+    "Angular",
+    "Vue",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "PHP",
+    "Swift",
+    "Dart",
+    "Node.js",
+    "Flutter",
+    "Redux",
+    "RxJS",
+    "JWT",
+    "HTML",
+    "CSS",
+    "SASS",
+    "Bootstrap",
+    "Tailwind",
+    "MongoDB",
+    "SQL",
+    "Jest",
+    "Cypress",
+    "Git",
+    "Docker",
+    "GitHub Actions",
+    "GitHub Copilot",
+    "IA",
+    "OpenAPI",
+    "Angular Material"
+  ],
+  "expertise": {
+    "yearsExperience": "10+",
+    "technologiesMastered": "15+",
+    "projectsCompleted": "20+"
+  },
+  "trainings": [
+    "Desarrollo con IA y GitHub Copilot",
+    "Angular 8 - Desde cero hasta profesional",
+    "Desarrollo web con Angular, NodeJS y MongoDB",
+    "Angular: Aplicaciones en tiempo real con Sockets y REST",
+    "Vue js + Firebase + MEVN",
+    "Flutter: Guía completa de desarrollo para IOS y Android",
+    "iOS y Swift: Curso completo de cero a profesional",
+    "Machine Learning y Data Science con Python"
+  ]
+}
