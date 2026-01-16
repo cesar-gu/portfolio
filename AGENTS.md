@@ -103,7 +103,9 @@ TypeScript type check
     ↓
 Astro build
     ↓
-Deploy automático a gh-pages
+Upload artifact
+    ↓
+Deploy automático a GitHub Pages
 ```
 
 **Ventajas**:
@@ -233,8 +235,7 @@ npm run type-check # TypeScript validation
 
 **Configuración GitHub Pages**:
 
-- Source: Deploy from branch
-- Branch: `gh-pages`
+- Source: GitHub Actions
 - Automatic deployments enabled
 
 ### Iteración 7: Documentación (15/01/2026)
@@ -558,11 +559,17 @@ El archivo `.nvmrc` está configurado con la versión 20 de Node.js. Este comand
    ```
 
 5. **Verificar GitHub Actions**
-   - Ir a Actions tab
-   - Confirmar que workflow se ejecutó
-   - Verificar deploy en cesargupe.github.io
+   - Ir a Actions tab en tu repositorio
+   - Confirmar que workflow se ejecutó correctamente ✅
+   - GitHub Pages creará automáticamente la rama y desplegará
+   - Verificar deploy en https://cesargupe.github.io/portfolio
 
-6. **Validación SEO**
+6. **Configurar GitHub Pages (una única vez)**
+   - Ve a **Settings** → **Pages**
+   - Source: Selecciona **"GitHub Actions"**
+   - Haz clic en **Save**
+
+7. **Validación SEO**
    - Ejecutar Lighthouse
    - Validar Core Web Vitals
    - Testing en móvil

@@ -220,19 +220,19 @@ colors: {
 
 ## 🚢 Deploy en GitHub Pages
 
-El proyecto está configurado para deploy automático:
+El proyecto está configurado para deploy automático con GitHub Actions:
 
 1. **Push a rama `main`** activa GitHub Actions
 2. **Workflow `deploy.yml`**:
    - ✅ Valida código (ESLint, Prettier)
    - ✅ Construye proyecto (Astro)
    - ✅ Corre Lighthouse CI
-   - ✅ Deploy a rama `gh-pages`
+   - ✅ Deploy automático a GitHub Pages
 
-3. **Configurar en GitHub**:
+3. **Configurar en GitHub** (una única vez):
    - Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: `gh-pages` / `/(root)`
+   - Source: **GitHub Actions**
+   - Haz clic en **Save**
 
 ## 🔧 Troubleshooting
 
