@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cesargupe.github.io/sitemap.xml
+Sitemap: https://cesar-gu.github.io/sitemap.xml

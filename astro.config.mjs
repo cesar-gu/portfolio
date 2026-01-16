@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://cesargupe.github.io',
+  site: 'https://cesar-gu.github.io',
   base: '/portfolio',
   integrations: [
     vue(),

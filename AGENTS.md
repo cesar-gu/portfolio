@@ -5,7 +5,7 @@ Documento que registra el proceso de desarrollo del portfolio personal de César
 ## 📌 Información del Proyecto
 
 - **Proyecto**: Portfolio Personal - César Gutiérrez
-- **URL**: https://cesargupe.github.io
+- **URL**: https://cesar-gu.github.io
 - **Repositorio**: https://github.com/cesar-gu/portfolio
 - **Fecha de Inicio**: 15 de enero de 2026
 - **Estado**: En desarrollo
@@ -562,7 +562,7 @@ El archivo `.nvmrc` está configurado con la versión 20 de Node.js. Este comand
    - Ir a Actions tab en tu repositorio
    - Confirmar que workflow se ejecutó correctamente ✅
    - GitHub Pages creará automáticamente la rama y desplegará
-   - Verificar deploy en https://cesargupe.github.io/portfolio
+   - Verificar deploy en https://cesar-gu.github.io/portfolio
 
 6. **Configurar GitHub Pages (una única vez)**
    - Ve a **Settings** → **Pages**
