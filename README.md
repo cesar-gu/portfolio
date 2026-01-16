@@ -261,7 +261,6 @@ Este proyecto es de código abierto y disponible bajo la licencia [MIT](LICENSE)
 ## 📧 Contacto
 
 - **Email**: cesargupe95@gmail.com
-- **Teléfono**: +34 671 844 950
 - **LinkedIn**: [cesargupe](https://www.linkedin.com/in/cesargupe/)
 - **GitHub**: [cesar-gu](https://github.com/cesar-gu)
 - **GitLab**: [cesargupe](https://gitlab.com/cesargupe)
