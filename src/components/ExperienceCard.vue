@@ -8,16 +8,18 @@
         >
           {{ experience.position }}
         </h3>
-        <p class="text-lg font-semibold text-gray-700 mt-1">{{ experience.name }}</p>
-        <p class="text-sm text-gray-500 mt-1">📍 {{ experience.location }}</p>
+        <p class="text-lg font-semibold text-gray-700 mt-1">
+          {{ experience.name }}
+          <span class="text-sm text-gray-500">📍{{ experience.location }}</span>
+        </p>
       </div>
-      <div class="text-right">
-        <p class="text-sm font-semibold text-gray-700">
+      <div class="text-left md:text-right">
+        <p class="text-sm font-semibold text-gray-600 whitespace-nowrap">
           {{ formatDate(experience.startDate) }} - {{ formatDate(experience.endDate) }}
         </p>
         <p
           v-if="experience.isCurrentRole"
-          class="text-xs font-bold text-accent-green mt-1 px-3 py-1 bg-accent-green/10 rounded-full inline-block"
+          class="text-xs font-bold text-accent-green mt-1 px-3 py-1 bg-accent-green/10 rounded-full inline-block md:inline-block"
         >
           ✓ Rol actual
         </p>
