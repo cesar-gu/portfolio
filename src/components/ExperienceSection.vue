@@ -1,7 +1,7 @@
 <template>
   <section
     id="experience"
-    class="py-24 px-4 bg-gradient-to-b from-gray-100 via-white to-gray-50 relative overflow-hidden"
+    class="py-24 px-4 bg-gradient-to-b from-white via-gray-50 to-gray-100 relative overflow-hidden"
   >
     <!-- Background elements -->
     <div class="absolute inset-0 opacity-5">
