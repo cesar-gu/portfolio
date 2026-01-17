@@ -51,11 +51,7 @@
               class="group relative w-10 h-10 bg-gray-800 hover:bg-accent-orange rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:shadow-accent-orange/50"
               title="Email"
             >
-              <svg
-                class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                 ></path>
