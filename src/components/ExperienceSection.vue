@@ -4,7 +4,7 @@
     class="py-24 px-4 bg-gradient-to-b from-white via-gray-50 to-gray-100 relative overflow-hidden"
   >
     <!-- Background elements -->
-    <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0 opacity-5" aria-hidden="true">
       <div class="absolute top-40 right-20 w-72 h-72 bg-primary-500 rounded-full blur-3xl"></div>
       <div
         class="absolute bottom-40 left-20 w-72 h-72 bg-accent-orange rounded-full blur-3xl"
@@ -15,13 +15,14 @@
       <!-- Section Header -->
       <SectionHeader label="Trayectoria" title="Experiencia" highlight="Profesional" />
 
-      <div class="space-y-6">
+      <div class="space-y-6" role="list">
         <ExperienceCard
           v-for="(exp, index) in experiences"
           :key="`${exp.name}-${exp.startDate}`"
           :experience="exp"
           :delay="index * 50"
           :known-techs="knownTechs"
+          role="listitem"
         />
       </div>
     </div>

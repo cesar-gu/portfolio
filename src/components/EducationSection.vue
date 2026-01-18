@@ -4,7 +4,7 @@
     class="py-24 px-4 bg-gradient-to-b from-white via-gray-50 to-gray-100 relative overflow-hidden"
   >
     <!-- Background elements -->
-    <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0 opacity-5" aria-hidden="true">
       <div class="absolute top-40 right-20 w-72 h-72 bg-primary-500 rounded-full blur-3xl"></div>
       <div
         class="absolute bottom-40 left-20 w-72 h-72 bg-accent-orange rounded-full blur-3xl"
@@ -16,13 +16,14 @@
       <SectionHeader label="Aprendizaje" title="Formación" highlight="Académica" />
 
       <!-- Education Timeline -->
-      <div class="space-y-6 mb-20">
+      <div class="space-y-6 mb-20" role="list">
         <Card
           v-for="(edu, index) in education"
           :key="`${edu.studyType}-${edu.startDate}`"
           :data-aos-delay="index * 50"
           border-color="primary"
           padding="p-8"
+          role="listitem"
         >
           <!-- Header: Degree Type and Dates -->
           <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
@@ -35,7 +36,9 @@
                 </h3>
                 <p
                   v-if="edu.score"
+                  role="status"
                   class="text-sm font-bold text-accent-green px-3 py-1 bg-accent-green/10 rounded-full inline-block"
+                  :aria-label="`Calificación: ${edu.score}`"
                 >
                   ⭐ {{ edu.score }}
                 </p>
@@ -44,7 +47,9 @@
             </div>
             <div class="text-left md:text-right">
               <p class="text-sm font-semibold text-gray-600 whitespace-nowrap">
-                {{ edu.startDate }} - {{ edu.endDate }}
+                <span :aria-label="`Inicio: ${edu.startDate}`">{{ edu.startDate }}</span>
+                -
+                <span :aria-label="`Fin: ${edu.endDate}`">{{ edu.endDate }}</span>
               </p>
             </div>
           </div>
@@ -60,9 +65,10 @@
             :href="edu.fileUrl"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-primary-50 to-primary-100 border border-primary-200 hover:border-primary-400 text-primary-700 hover:text-primary-900 rounded-lg font-semibold transition-all duration-300 hover:shadow-md text-sm group"
+            :aria-label="`Descargar proyecto final de ${edu.studyType} en ${edu.institution}`"
+            class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-primary-50 to-primary-100 border border-primary-200 hover:border-primary-400 text-primary-700 hover:text-primary-900 rounded-lg font-semibold transition-all duration-300 hover:shadow-md text-sm group focus:outline-none focus:ring-2 focus:ring-primary-500"
           >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 stroke="currentColor"
@@ -80,7 +86,8 @@
       <!-- Additional Training -->
       <div data-aos="fade-up" data-aos-delay="150">
         <h3 class="text-3xl font-bold text-gray-900 mb-8">
-          📚
+          <span class="sr-only">Formación adicional</span>
+          <span aria-hidden="true">📚</span>
           <span
             class="bg-gradient-to-r from-primary-600 to-accent-orange bg-clip-text text-transparent"
           >
@@ -88,7 +95,7 @@
           </span>
         </h3>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" role="list">
           <!-- Training Card -->
           <Card
             v-for="(training, idx) in trainings"
@@ -96,12 +103,14 @@
             :data-aos-delay="200 + idx * 30"
             border-color="primary"
             padding="p-6"
+            role="listitem"
           >
             <div class="flex gap-3">
               <svg
                 class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"

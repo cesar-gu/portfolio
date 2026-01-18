@@ -1,6 +1,8 @@
 <template>
   <nav
     class="sticky top-0 z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-primary-500/20 backdrop-blur-md shadow-lg"
+    role="navigation"
+    aria-label="Navegación principal"
   >
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -8,6 +10,7 @@
         <div class="flex-shrink-0 relative" data-aos="fade-in" data-aos-duration="800">
           <div
             class="absolute inset-0 bg-gradient-to-r from-primary-400/30 to-accent-orange/30 blur-xl rounded-full"
+            aria-hidden="true"
           ></div>
           <span
             class="relative text-xl font-bold bg-gradient-to-r from-primary-400 to-accent-orange bg-clip-text text-transparent cursor-pointer"
@@ -20,39 +23,41 @@
         <div class="hidden md:flex gap-8">
           <a
             href="#skills"
-            class="text-gray-300 hover:text-accent-orange transition-colors font-medium"
+            class="text-gray-300 hover:text-accent-orange transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1"
           >
             Habilidades
           </a>
           <a
             href="#experience"
-            class="text-gray-300 hover:text-accent-orange transition-colors font-medium"
+            class="text-gray-300 hover:text-accent-orange transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1"
           >
             Experiencia
           </a>
           <a
             href="#education"
-            class="text-gray-300 hover:text-accent-orange transition-colors font-medium"
+            class="text-gray-300 hover:text-accent-orange transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1"
           >
             Educación
           </a>
         </div>
 
         <!-- Social Links -->
-        <div class="flex gap-3">
+        <div class="flex gap-3" role="list">
           <SocialLink
             v-for="profile in basics.profiles"
             :key="profile.network"
             :href="profile.url"
             :network="profile.network"
             variant="nav"
+            role="listitem"
           />
           <a
             :href="`mailto:${basics.email}`"
-            class="p-2 text-gray-400 hover:text-accent-orange hover:bg-accent-orange/10 rounded-lg transition-all transform hover:scale-110"
+            class="p-2 text-gray-400 hover:text-accent-orange hover:bg-accent-orange/10 rounded-lg transition-all transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-gray-900"
+            :aria-label="`Enviar email a ${basics.email}`"
             title="Email"
           >
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
               />

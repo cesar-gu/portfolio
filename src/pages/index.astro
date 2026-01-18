@@ -89,6 +89,18 @@ const sortedEducation = [...portfolio.education].sort(
         background-color: #0066cc;
         color: white;
       }
+
+      /* Accessibility: Reduce motion for users who prefer it */
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
     </style>
   </head>
 
@@ -96,21 +108,24 @@ const sortedEducation = [...portfolio.education].sort(
     <!-- Navigation -->
     <Navigation client:load basics={portfolio.basics} />
 
-    <!-- Hero Section -->
-    <HeroSection client:load basics={portfolio.basics} />
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <HeroSection client:load basics={portfolio.basics} />
 
-    <!-- Skills Section -->
-    <SkillsShowcase client:load skills={portfolio.skills} expertise={portfolio.expertise} />
+      <!-- Skills Section -->
+      <SkillsShowcase client:load skills={portfolio.skills} expertise={portfolio.expertise} />
 
-    <!-- Experience Section -->
-    <ExperienceSection
-      client:load
-      experiences={sortedExperiences}
-      knownTechs={portfolio.knownTechs}
-    />
+      <!-- Experience Section -->
+      <ExperienceSection
+        client:load
+        experiences={sortedExperiences}
+        knownTechs={portfolio.knownTechs}
+      />
 
-    <!-- Education Section -->
-    <EducationSection client:load education={sortedEducation} trainings={portfolio.trainings} />
+      <!-- Education Section -->
+      <EducationSection client:load education={sortedEducation} trainings={portfolio.trainings} />
+    </main>
 
     <!-- Footer -->
     <Footer client:load basics={portfolio.basics} />

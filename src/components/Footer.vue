@@ -1,9 +1,10 @@
 <template>
   <footer
     class="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950 text-white py-16 relative overflow-hidden border-t border-gray-800"
+    role="contentinfo"
   >
     <!-- Background elements -->
-    <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0 opacity-5" aria-hidden="true">
       <div class="absolute top-20 right-20 w-72 h-72 bg-primary-500 rounded-full blur-3xl"></div>
       <div
         class="absolute bottom-20 left-20 w-72 h-72 bg-accent-orange rounded-full blur-3xl"
@@ -18,7 +19,12 @@
             <div
               class="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-orange rounded-xl flex items-center justify-center"
             >
-              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
                 <path
                   d="M9.4 16.6L4.8 12l4.6-4.6-1.4-1.4L2 12l6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6 1.4-1.4L22 12l-6 6-1.4-1.4z"
                 ></path>
@@ -38,20 +44,22 @@
         <!-- Social Links -->
         <div data-aos="fade-up" data-aos-delay="100" class="md:text-right">
           <h3 class="text-lg font-bold mb-6 text-white">Conecta conmigo</h3>
-          <div class="flex gap-4 md:justify-end">
+          <div class="flex gap-4 md:justify-end" role="list">
             <SocialLink
               v-for="profile in basics.profiles"
               :key="profile.network"
               :href="profile.url"
               :network="profile.network"
               variant="footer"
+              role="listitem"
             />
             <a
               :href="`mailto:${basics.email}`"
-              class="group relative w-10 h-10 bg-gray-800 hover:bg-accent-orange rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:shadow-accent-orange/50"
-              title="Email"
+              :aria-label="`Enviar email a ${basics.email}`"
+              class="group relative w-10 h-10 bg-gray-800 hover:bg-accent-orange rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:shadow-accent-orange/50 focus:outline-none focus:ring-2 focus:ring-accent-orange"
+              :title="`Email: ${basics.email}`"
             >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                 ></path>
@@ -64,7 +72,9 @@
       <!-- Divider -->
       <div class="border-t border-gray-800 pt-8 pb-8" data-aos="fade-up" data-aos-delay="150">
         <p class="text-gray-500 text-sm text-center">
-          Diseñado con <span class="text-accent-orange">❤</span> usando Astro + Vue + Tailwind
+          Diseñado con
+          <span class="text-accent-orange" aria-label="corazón">❤</span>
+          usando Astro + Vue + Tailwind
         </p>
       </div>
 

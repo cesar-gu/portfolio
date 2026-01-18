@@ -15,11 +15,9 @@
     <div class="max-w-5xl mx-auto text-center relative z-10">
       <!-- Main Title - Professional Role -->
       <div data-aos="zoom-in" data-aos-delay="100">
-        <h2
-          class="text-base md:text-lg uppercase tracking-widest text-accent-orange font-bold mb-6"
-        >
+        <p class="text-base md:text-lg uppercase tracking-widest text-accent-orange font-bold mb-6">
           {{ basics.career }}
-        </h2>
+        </p>
       </div>
 
       <h1
@@ -40,7 +38,7 @@
         <div class="relative">
           <img
             :src="basics.image"
-            :alt="basics.name"
+            :alt="`Foto de perfil de ${basics.name}, ${basics.specialization}`"
             class="relative h-72 w-60 md:h-96 md:w-80 rounded-full shadow-2xl object-cover animate-morph-pulse"
           />
         </div>
