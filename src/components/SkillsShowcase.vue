@@ -62,7 +62,7 @@
         <!-- Card 1 -->
         <Card border-color="primary" data-aos-delay="300" :custom-classes="['text-center']">
           <div
-            class="text-5xl font-black bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent mb-3"
+            class="text-5xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent mb-3"
             aria-label="Años de experiencia"
           >
             {{ expertise.yearsExperience }}
@@ -73,7 +73,7 @@
         <!-- Card 2 -->
         <Card border-color="orange" data-aos-delay="350" :custom-classes="['text-center']">
           <div
-            class="text-5xl font-black bg-gradient-to-r from-accent-orange to-accent-orange/70 bg-clip-text text-transparent mb-3"
+            class="text-5xl font-bold bg-gradient-to-r from-accent-orange to-accent-orange/70 bg-clip-text text-transparent mb-3"
             aria-label="Tecnologías dominadas"
           >
             {{ expertise.technologiesMastered }}
@@ -84,7 +84,7 @@
         <!-- Card 3 -->
         <Card border-color="green" data-aos-delay="400" :custom-classes="['text-center']">
           <div
-            class="text-5xl font-black bg-gradient-to-r from-accent-green to-accent-green/70 bg-clip-text text-transparent mb-3"
+            class="text-5xl font-bold bg-gradient-to-r from-accent-green to-accent-green/70 bg-clip-text text-transparent mb-3"
             aria-label="Proyectos completados"
           >
             {{ expertise.projectsCompleted }}

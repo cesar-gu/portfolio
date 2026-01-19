@@ -76,6 +76,31 @@ const sortedEducation = [...portfolio.education].sort(
       @import 'tailwindcss/components';
       @import 'tailwindcss/utilities';
 
+      /* Importar fuentes locales */
+      @import '../styles/fonts.css';
+
+      * {
+        font-family: 'Inter', system-ui, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+
+      h1 *,
+      h2 *,
+      h3 *,
+      h4 *,
+      h5 *,
+      h6 * {
+        font-family: inherit;
+      }
+
       html {
         scroll-behavior: smooth;
       }
@@ -83,9 +108,6 @@ const sortedEducation = [...portfolio.education].sort(
       body {
         background-color: #ffffff;
         color: #1f2937;
-        font-family:
-          -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-          'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
       }
 
       ::selection {

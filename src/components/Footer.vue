@@ -30,11 +30,11 @@
                 ></path>
               </svg>
             </div>
-            <h3
+            <span
               class="text-xl font-bold bg-gradient-to-r from-primary-400 to-accent-orange bg-clip-text text-transparent"
             >
               {{ basics.brandName }}
-            </h3>
+            </span>
           </div>
           <p class="text-gray-400 text-sm leading-relaxed">
             {{ basics.summaryShort }}

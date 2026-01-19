@@ -49,8 +49,6 @@ portfolio/
 │   │   └── tech.ts          # extractTecnologiesFromText(), etc.
 │   ├── data/
 │   │   └── portfolio.json   # Datos del CV en JSON Resume (730+ líneas)
-│   ├── layouts/
-│   │   └── BaseLayout.astro # Layout base
 │   ├── pages/
 │   │   └── index.astro      # Página principal
 ├── public/
