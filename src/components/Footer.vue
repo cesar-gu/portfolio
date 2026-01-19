@@ -16,20 +16,7 @@
         <!-- About Section -->
         <div class="group" data-aos="fade-up" data-aos-delay="0">
           <div class="flex items-center gap-3 mb-4">
-            <div
-              class="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-orange rounded-xl flex items-center justify-center"
-            >
-              <svg
-                class="w-6 h-6 text-white"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  d="M9.4 16.6L4.8 12l4.6-4.6-1.4-1.4L2 12l6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6 1.4-1.4L22 12l-6 6-1.4-1.4z"
-                ></path>
-              </svg>
-            </div>
+            <img src="/portfolio/favicon.svg" alt="Logo" class="w-10 h-10" />
             <h3
               class="text-xl font-bold bg-gradient-to-r from-primary-400 to-accent-orange bg-clip-text text-transparent"
             >
