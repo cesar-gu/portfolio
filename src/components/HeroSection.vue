@@ -15,9 +15,11 @@
     <div class="max-w-5xl mx-auto text-center relative z-10">
       <!-- Main Title - Professional Role -->
       <div data-aos="zoom-in" data-aos-delay="100">
-        <p class="text-base md:text-lg uppercase tracking-widest text-accent-orange font-bold mb-6">
+        <h2
+          class="text-base md:text-lg uppercase tracking-widest text-accent-orange font-bold mb-6"
+        >
           {{ basics.career }}
-        </p>
+        </h2>
       </div>
 
       <h1
