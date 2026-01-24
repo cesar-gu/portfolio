@@ -235,9 +235,9 @@
     "Angular Material"
   ],
   "expertise": {
-    "yearsExperience": "10+",
-    "technologiesMastered": "15+",
-    "projectsCompleted": "20+"
+    "startOfExperience": 2018,
+    "technologiesMastered": 15,
+    "projectsCompleted": 20
   },
   "trainings": [
     "Desarrollo con IA y GitHub Copilot",

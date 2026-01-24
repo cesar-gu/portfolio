@@ -65,7 +65,7 @@
             class="text-5xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent mb-3"
             aria-label="Años de experiencia"
           >
-            {{ expertise.yearsExperience }}
+            {{ new Date().getFullYear() - expertise.startOfExperience }}+
           </div>
           <p class="text-gray-700 font-medium">Años de experiencia Frontend</p>
         </Card>
@@ -76,7 +76,7 @@
             class="text-5xl font-bold bg-gradient-to-r from-accent-orange to-accent-orange/70 bg-clip-text text-transparent mb-3"
             aria-label="Tecnologías dominadas"
           >
-            {{ expertise.technologiesMastered }}
+            {{ expertise.technologiesMastered }}+
           </div>
           <p class="text-gray-700 font-medium">Tecnologías utilizadas</p>
         </Card>
@@ -85,11 +85,11 @@
         <Card border-color="green" data-aos-delay="400" :custom-classes="['text-center']">
           <div
             class="text-5xl font-bold bg-gradient-to-r from-accent-green to-accent-green/70 bg-clip-text text-transparent mb-3"
-            aria-label="Proyectos completados"
+            aria-label="Proyectos realizados"
           >
-            {{ expertise.projectsCompleted }}
+            {{ expertise.projectsCompleted }}+
           </div>
-          <p class="text-gray-700 font-medium">Proyectos completados</p>
+          <p class="text-gray-700 font-medium">Proyectos realizados</p>
         </Card>
       </div>
     </div>

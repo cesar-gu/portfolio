@@ -9,7 +9,7 @@ export interface Skill {
 }
 
 export interface Expertise {
-  yearsExperience: string;
-  technologiesMastered: string;
-  projectsCompleted: string;
+  startOfExperience: number;
+  technologiesMastered: number;
+  projectsCompleted: number;
 }
