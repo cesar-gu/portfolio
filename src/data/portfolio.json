@@ -6,8 +6,8 @@
     "specialization": "Frontend Developer",
     "image": "/portfolio/images/profile.webp",
     "email": "cesargupe95@gmail.com",
-    "summary": "Soy desarrollador Frontend especializado en Angular y Vue con más de 10 años de experiencia creando aplicaciones web modernas, movido siempre por la curiosidad y el amor al código limpio.",
-    "summaryShort": "Desarrollador Frontend especializado en Angular y Vue con 10+ años de experiencia.",
+    "summary": "Soy desarrollador Frontend especializado en Angular y Vue con más de {year} años de experiencia creando aplicaciones web modernas, movido siempre por la curiosidad y el amor al código limpio.",
+    "summaryShort": "Desarrollador Frontend especializado en Angular y Vue con {year}+ años de experiencia.",
     "url": "https://cesar-gu.github.io/portfolio",
     "location": {
       "address": "León",

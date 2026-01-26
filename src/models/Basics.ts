@@ -18,13 +18,13 @@ export interface Basics {
   name: string;
   brandName: string;
   email: string;
-  career?: string;
-  specialization?: string;
+  career: string;
+  specialization: string;
   summary: string;
-  summaryShort?: string;
-  image?: string;
+  summaryShort: string;
+  image: string;
   url: string;
   location: Location;
   profiles: Profile[];
-  featuredTechs?: string[];
+  featuredTechs: string[];
 }

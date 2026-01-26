@@ -24,7 +24,7 @@
             </span>
           </div>
           <p class="text-gray-400 text-sm leading-relaxed">
-            {{ basics.summaryShort }}
+            {{ summaryShort }}
           </p>
         </div>
 
@@ -81,15 +81,25 @@
 
 <script setup lang="ts">
 import type { PropType } from 'vue';
-import { getSocialFooterClass } from '../utils/social';
+import { computed } from 'vue';
 import SocialLink from './SocialLink.vue';
 import type { Basics } from '../models/Basics';
+import type { Expertise } from '../models/Skill';
+import { interpolateYears } from '../utils/interpolation';
 
 const props = defineProps({
   basics: {
     type: Object as PropType<Basics>,
     required: true,
   },
+  expertise: {
+    type: Object as PropType<Expertise>,
+    required: true,
+  },
+});
+
+const summaryShort = computed(() => {
+  return interpolateYears(props.basics.summaryShort, props.expertise.startOfExperience);
 });
 </script>
 

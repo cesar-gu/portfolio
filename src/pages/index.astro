@@ -136,7 +136,7 @@ const sortedEducation = [...portfolio.education].sort(
     <!-- Main Content -->
     <main id="main-content">
       <!-- Hero Section -->
-      <HeroSection client:load basics={portfolio.basics} />
+      <HeroSection client:load basics={portfolio.basics} expertise={portfolio.expertise} />
 
       <!-- Skills Section -->
       <SkillsShowcase client:load skills={portfolio.skills} expertise={portfolio.expertise} />
@@ -153,7 +153,7 @@ const sortedEducation = [...portfolio.education].sort(
     </main>
 
     <!-- Footer -->
-    <Footer client:load basics={portfolio.basics} />
+    <Footer client:load basics={portfolio.basics} expertise={portfolio.expertise} />
 
     <!-- Initialize AOS (locally imported) -->
     <script>

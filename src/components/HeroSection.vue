@@ -61,7 +61,7 @@
         data-aos="fade-up"
         data-aos-delay="500"
       >
-        {{ basics.summary }}
+        {{ summary }}
       </p>
 
       <!-- Tech Stack -->
@@ -82,10 +82,16 @@
 import type { PropType } from 'vue';
 import { computed } from 'vue';
 import type { Basics } from '../models/Basics';
+import type { Expertise } from '../models/Skill';
+import { interpolateYears } from '../utils/interpolation';
 
 const props = defineProps({
   basics: {
     type: Object as PropType<Basics>,
+    required: true,
+  },
+  expertise: {
+    type: Object as PropType<Expertise>,
     required: true,
   },
 });
@@ -98,6 +104,10 @@ const firstWord = computed(() => {
 const remainingWords = computed(() => {
   const words = props.basics.specialization.split(' ');
   return words.slice(1).join(' ');
+});
+
+const summary = computed(() => {
+  return interpolateYears(props.basics.summary, props.expertise.startOfExperience);
 });
 </script>
 

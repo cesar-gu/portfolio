@@ -12,7 +12,7 @@
 Portfolio profesional que muestra:
 
 - 🎯 Información personal y profesional
-- 💼 Experiencia laboral (10+ años en desarrollo Frontend)
+- 💼 Experiencia laboral (años en desarrollo Frontend)
 - 🎓 Formación académica (Máster + Grado en Ingeniería Informática)
 - 🛠️ 40+ habilidades técnicas categorizadas
 - 📱 Diseño responsive con paleta moderna corporativa
