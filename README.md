@@ -15,8 +15,10 @@ Portfolio profesional que muestra:
 - 💼 Experiencia laboral (años en desarrollo Frontend)
 - 🎓 Formación académica (Máster + Grado en Ingeniería Informática)
 - 🛠️ 40+ habilidades técnicas categorizadas
+- � 3 proyectos personales destacados con carrusel interactivo
 - 📱 Diseño responsive con paleta moderna corporativa
 - ✨ Animaciones suaves en scroll con AOS
+- ♿ Accesible WCAG 2.1 AA (83% cumplimiento)
 - 🚀 Optimizado para SEO con Schema.org markup
 - ⚡ Core Web Vitals optimizados (Lighthouse 90+)
 
@@ -25,30 +27,37 @@ Portfolio profesional que muestra:
 ```
 portfolio/
 ├── src/
-│   ├── components/          # Componentes Vue reutilizables (9 componentes)
+│   ├── components/          # Componentes Vue reutilizables (12 componentes)
 │   │   ├── Navigation.vue
 │   │   ├── HeroSection.vue
 │   │   ├── SkillsShowcase.vue
 │   │   ├── ExperienceSection.vue
 │   │   ├── ExperienceCard.vue
 │   │   ├── EducationSection.vue
+│   │   ├── ProjectsSection.vue      # Sección de proyectos con carrusel
+│   │   ├── ProjectCard.vue          # Card individual de proyecto
 │   │   ├── Footer.vue
-│   │   ├── SocialLink.vue      # Componente reutilizable
-│   │   ├── SectionHeader.vue   # Componente reutilizable
+│   │   ├── SocialLink.vue           # Componente reutilizable
+│   │   ├── SectionHeader.vue        # Componente reutilizable
 │   │   └── Card.vue
 │   ├── models/              # Tipos e interfaces centralizadas
 │   │   ├── Basics.ts        # Profile, Location, Basics
 │   │   ├── Skill.ts         # Skill, Expertise
 │   │   ├── Experience.ts    # Experience
 │   │   ├── Education.ts     # Education
+│   │   ├── Project.ts       # Project, ProjectGroup (🆕)
 │   │   ├── ComponentProps.ts # SocialLinkProps, SectionHeaderProps
 │   │   └── index.ts         # Re-exports
 │   ├── utils/               # Funciones compartidas
 │   │   ├── social.ts        # getSocialNavClass(), getSocialFooterClass()
 │   │   ├── date.ts          # formatDate()
-│   │   └── tech.ts          # extractTecnologiesFromText(), etc.
+│   │   ├── tech.ts          # extractTecnologiesFromText(), etc.
+│   │   ├── carousel.ts      # Lógica de carrusel (🆕)
+│   │   └── interpolation.ts # Interpolación de datos (🆕)
+│   ├── composables/         # Vue composables reutilizables
+│   │   └── useProjectCarousel.ts # Lógica de carrusel de proyectos (🆕)
 │   ├── data/
-│   │   └── portfolio.json   # Datos del CV en JSON Resume (730+ líneas)
+│   │   └── portfolio.json   # Datos del CV en JSON Resume (313+ líneas)
 │   ├── pages/
 │   │   └── index.astro      # Página principal
 ├── public/
@@ -201,14 +210,16 @@ El archivo `.nvmrc` está configurado con Node.js 22. Este comando carga automá
 - ✅ 2 titulaciones académicas
 - ✅ 12 categorías de habilidades
 - ✅ 150+ tecnologías documentadas
+- ✅ 3 proyectos personales destacados (🆕)
 - ✅ Redes sociales (LinkedIn, GitHub, GitLab)
 
 **Código**:
 
-- 9 componentes Vue (~851 líneas)
-- 3 archivos de utilidades (~75 líneas)
-- 5 archivos de modelos/tipos (~82 líneas)
-- Total: ~2,068 líneas de código
+- 12 componentes Vue (~1,200+ líneas)
+- 1 composable Vue (~80 líneas)
+- 5 archivos de utilidades (~150+ líneas)
+- 6 archivos de modelos/tipos (~100+ líneas)
+- Total: ~2,500+ líneas de código
 - Duplicidad de código: 0% ✅
 
 ## 📥 Actualizar Datos del CV
@@ -398,6 +409,13 @@ Este proyecto es de código abierto y disponible bajo la licencia [MIT](LICENSE)
 - 11 interfaces en un punto único de verdad
 - Mejor IDE support y auto-completado
 - Mantenibilidad mejorada
+
+✅ **Iteración 11 (🆕)**: Sección de Proyectos Personales
+
+- 2 nuevos componentes (ProjectsSection, ProjectCard)
+- Carrusel interactivo con swipe para mobile
+- Modelo de datos Project con estado, rol, equipo
+- Composable useProjectCarousel para lógica de navegación
 
 ✅ **Zero Duplicity**: 0% de código duplicado
 

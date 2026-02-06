@@ -248,5 +248,65 @@
     "Flutter: Guía completa de desarrollo para IOS y Android",
     "iOS y Swift: Curso completo de cero a profesional",
     "Machine Learning y Data Science con Python"
+  ],
+  "projects": [
+    {
+      "id": "web-analyzer",
+      "name": "Web Analyzer",
+      "shortDescription": "Herramienta web para analizar rendimiento, accesibilidad y SEO. Orientada a usuarios no técnicos.",
+      "description": "Herramienta de análisis web que utiliza la API de Lighthouse para proporcionar métricas de rendimiento y SEO de sitios web. Interfaz moderna y responsiva construida con Astro y Vue, permitiendo a usuarios no técnicos analizar fácilmente la calidad de sus páginas.",
+      "url": "https://cesar-gu.github.io/web-analyzer",
+      "repository": "https://github.com/cesar-gu/web-analyzer",
+      "startDate": "2025-12",
+      "status": "active",
+      "featured": true,
+      "highlights": [
+        "Análisis en tiempo real mediante API de Lighthouse",
+        "Interfaz intuitiva para usuarios no técnicos",
+        "Visualización de métricas de rendimiento, accesibilidad y SEO",
+        "Generación de reportes detallados"
+      ],
+      "technologies": ["Astro", "Vue", "Tailwind CSS", "Lighthouse API"]
+    },
+    {
+      "id": "babygrow",
+      "name": "BabyGrow",
+      "shortDescription": "Calculadora interactiva de percentiles pediátricos con gráficos interactivos, basada en datos de referencia de la OMS.",
+      "description": "Herramienta web moderna para calcular percentiles de crecimiento infantil utilizando estándares de la Organización Mundial de la Salud. Incluye gráficos interactivos, cálculo de múltiples métricas (peso, talla, IMC, perímetro cefálico) con interpolación automática y visualización intuitiva con código de colores.",
+      "url": "https://cesar-gu.github.io/babygrow",
+      "repository": "https://github.com/cesar-gu/babygrow",
+      "startDate": "2026-01",
+      "status": "active",
+      "featured": true,
+      "highlights": [
+        "Cálculo de 5 métricas de crecimiento con interpolación lineal",
+        "Gráficos interactivos con Chart.js",
+        "Datasets procesados de Excel a JSON"
+      ],
+      "technologies": ["Astro", "Vue", "Chart.js", "Tailwind CSS"]
+    },
+    {
+      "id": "funpoint",
+      "name": "FunPoint",
+      "shortDescription": "Plataforma integral para gestionar puntos de ocio, con administración de contenidos y análisis de datos en tiempo real.",
+      "description": "Proyecto colaborativo (grupo de 4 personas) desarrollando una plataforma integral para la gestión de espacios de ocio. Incluye aplicación web para administración de contenidos, landing page corporativa, backend con Node.js y MongoDB, y aplicaciones móviles con Flutter. El proyecto abarca desde gestión de usuarios hasta análisis de datos en tiempo real.",
+      "repository": "https://gitlab.com/funpoint-software",
+      "startDate": "2021-02",
+      "endDate": "2023-12",
+      "status": "inactive",
+      "featured": true,
+      "role": "Cofundador e Ingeniero de Software",
+      "team": "3 personas",
+      "highlights": [
+        "Desarrollo fullstack del ecosistema completo",
+        "Landing page con Nuxt.js",
+        "Aplicación móvil con Flutter para iOS y Android",
+        "Backend con Node.js, Express y MongoDB",
+        "Aplicaciones frontend con Vue.js y Redux",
+        "Autenticación JWT y autorización basada en roles",
+        "Análisis de datos en tiempo real"
+      ],
+      "technologies": ["Vue", "Vuetify", "Node", "Express", "MongoDB", "Flutter"]
+    }
   ]
 }

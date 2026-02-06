@@ -49,18 +49,18 @@ const props = withDefaults(defineProps<Props>(), {
 const borderColorClass = computed(() => {
   switch (props.borderColor) {
     case 'primary':
-      return 'hover:border-primary-300 hover:shadow-xl hover:-translate-y-2';
+      return 'hover:border-primary-300 hover:shadow-lg hover:-translate-y-2';
     case 'orange':
-      return 'hover:border-accent-orange/300 hover:shadow-xl hover:-translate-y-2';
+      return 'hover:border-accent-orange/300 hover:shadow-lg hover:-translate-y-2';
     case 'green':
-      return 'hover:border-accent-green/300 hover:shadow-xl hover:-translate-y-2';
+      return 'hover:border-accent-green/300 hover:shadow-lg hover:-translate-y-2';
     default:
-      return 'hover:border-primary-300 hover:shadow-xl hover:-translate-y-2';
+      return 'hover:border-primary-300 hover:shadow-lg hover:-translate-y-2';
   }
 });
 
 const hoverClass = computed(() => {
-  return 'hover:shadow-xl hover:-translate-y-2';
+  return 'hover:shadow-lg hover:-translate-y-2';
 });
 
 const gradientClass = computed(() => {

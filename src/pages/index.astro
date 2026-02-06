@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection.vue';
 import SkillsShowcase from '../components/SkillsShowcase.vue';
 import ExperienceSection from '../components/ExperienceSection.vue';
 import EducationSection from '../components/EducationSection.vue';
+import ProjectsSection from '../components/ProjectsSection.vue';
 import Footer from '../components/Footer.vue';
 import portfolio from '../data/portfolio.json';
 
@@ -137,6 +138,9 @@ const sortedEducation = [...portfolio.education].sort(
     <main id="main-content">
       <!-- Hero Section -->
       <HeroSection client:load basics={portfolio.basics} expertise={portfolio.expertise} />
+
+      <!-- Projects Section -->
+      <ProjectsSection client:load projects={portfolio.projects || []} basics={portfolio.basics} />
 
       <!-- Skills Section -->
       <SkillsShowcase client:load skills={portfolio.skills} expertise={portfolio.expertise} />

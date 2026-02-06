@@ -8,3 +8,4 @@ export * from './Skill';
 export * from './Experience';
 export * from './Education';
 export * from './ComponentProps';
+export * from './Project';
