@@ -29,11 +29,11 @@
         </span>
       </div>
 
-      <div class="text-sm text-gray-500 mb-4 flex items-center gap-2">
+      <div class="text-sm text-gray-500 mb-4">
         <time :datetime="project.startDate">
           {{ formatDate(project.startDate) }}
         </time>
-        <span>→</span>
+        <span class="mx-2">→</span>
         <time v-if="project.endDate" :datetime="project.endDate">
           {{ formatDate(project.endDate) }}
         </time>
