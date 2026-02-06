@@ -52,20 +52,7 @@
           aria-label="Anterior proyectos"
           @click="prev"
         >
-          <svg
-            class="w-4 h-4 sm:w-5 sm:h-5 text-gray-700 hover:text-primary-500 transition-colors"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
+          <IconArrowLeft class="text-gray-700 hover:text-primary-500 transition-colors" />
         </button>
 
         <button
@@ -74,20 +61,7 @@
           aria-label="Siguiente proyectos"
           @click="next"
         >
-          <svg
-            class="w-4 h-4 sm:w-5 sm:h-5 text-gray-700 hover:text-primary-500 transition-colors"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
+          <IconArrowRight class="text-gray-700 hover:text-primary-500 transition-colors" />
         </button>
 
         <div v-if="showControls && pages > 1" class="mt-6 flex items-center justify-center gap-3">
@@ -118,20 +92,7 @@
           :aria-label="`Enviar correo a ${props.basics.email} para conocer más sobre los proyectos personales`"
         >
           Ponerse en contacto
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 7l5 5m0 0l-5 5m5-5H6"
-            />
-          </svg>
+          <IconArrowRight />
         </a>
       </div>
     </div>
@@ -140,6 +101,8 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import IconArrowLeft from './icons/IconArrowLeft.vue';
+import IconArrowRight from './icons/IconArrowRight.vue';
 import type { Project } from '../models/Project';
 import type { Basics } from '../models/Basics';
 import { useProjectCarousel } from '../composables/useProjectCarousel';

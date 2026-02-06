@@ -68,16 +68,7 @@
             :aria-label="`Descargar proyecto final de ${edu.studyType} en ${edu.institution}`"
             class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-primary-50 to-primary-100 border border-primary-200 hover:border-primary-400 text-primary-700 hover:text-primary-900 rounded-lg font-semibold transition-all duration-300 hover:shadow-md text-sm group focus:outline-none focus:ring-2 focus:ring-primary-500"
           >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <IconDocument />
             Proyecto Final
           </a>
         </Card>
@@ -106,18 +97,7 @@
             role="listitem"
           >
             <div class="flex gap-3">
-              <svg
-                class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              <IconCheckmark class="text-primary-600 flex-shrink-0 mt-0.5" />
               <span
                 class="text-gray-700 font-medium group-hover:text-primary-700 transition-colors"
                 >{{ training }}</span
@@ -132,6 +112,8 @@
 
 <script setup lang="ts">
 import type { PropType } from 'vue';
+import IconDocument from './icons/IconDocument.vue';
+import IconCheckmark from './icons/IconCheckmark.vue';
 import SectionHeader from './SectionHeader.vue';
 import Card from './Card.vue';
 import type { Education } from '../models/Education';

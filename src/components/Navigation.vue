@@ -65,11 +65,7 @@
               :aria-label="`Enviar email a ${basics.email}`"
               title="Email"
             >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                />
-              </svg>
+              <IconEmail />
             </a>
           </div>
 
@@ -84,21 +80,7 @@
             :aria-expanded="menuOpen"
             aria-controls="mobile-menu"
           >
-            <svg
-              class="w-6 h-6 transition-transform duration-300"
-              :class="{ 'rotate-90': menuOpen }"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                :d="menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'"
-              />
-            </svg>
+            <IconMenu :is-open="menuOpen" />
           </button>
         </div>
       </div>
@@ -106,12 +88,12 @@
 
     <!-- Mobile Menu -->
     <transition
-      enter-active-class="transition ease-out duration-200"
-      enter-from-class="opacity-0 scale-95"
-      enter-to-class="opacity-100 scale-100"
-      leave-active-class="transition ease-in duration-150"
-      leave-from-class="opacity-100 scale-100"
-      leave-to-class="opacity-0 scale-95"
+      enter-active-class="transition ease-out duration-300"
+      enter-from-class="opacity-0 max-h-0"
+      enter-to-class="opacity-100 max-h-96"
+      leave-active-class="transition ease-in duration-200"
+      leave-from-class="opacity-100 max-h-96"
+      leave-to-class="opacity-0 max-h-0"
     >
       <div
         v-if="menuOpen"
@@ -166,11 +148,7 @@
                 :aria-label="`Enviar email a ${basics.email}`"
                 title="Email"
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                  />
-                </svg>
+                <IconEmail />
               </a>
             </div>
           </div>
@@ -183,8 +161,9 @@
 <script setup lang="ts">
 import type { PropType } from 'vue';
 import { ref } from 'vue';
-import { getSocialNavClass } from '../utils/social';
 import SocialLink from './SocialLink.vue';
+import IconEmail from './icons/IconEmail.vue';
+import IconMenu from './icons/IconMenu.vue';
 import type { Basics } from '../models/Basics';
 
 const props = defineProps({
