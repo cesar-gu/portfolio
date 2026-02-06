@@ -271,7 +271,7 @@
     {
       "id": "babygrow",
       "name": "BabyGrow",
-      "shortDescription": "Calculadora interactiva de percentiles pediátricos con gráficos interactivos, basada en datos de referencia de la OMS.",
+      "shortDescription": "Calculadora de percentiles pediátricos con gráficos interactivos, basada en datos de referencia de la OMS.",
       "description": "Herramienta web moderna para calcular percentiles de crecimiento infantil utilizando estándares de la Organización Mundial de la Salud. Incluye gráficos interactivos, cálculo de múltiples métricas (peso, talla, IMC, perímetro cefálico) con interpolación automática y visualización intuitiva con código de colores.",
       "url": "https://cesar-gu.github.io/babygrow",
       "repository": "https://github.com/cesar-gu/babygrow",
