@@ -14,7 +14,13 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:items-center">
         <!-- About Section -->
-        <div class="group" data-aos="fade-up" data-aos-delay="0">
+        <a
+          href="#main-content"
+          class="group"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          :aria-label="`Ir a ${basics.brandName}`"
+        >
           <div class="flex items-center gap-3 mb-4">
             <img src="/portfolio/favicon.svg" alt="Logo" class="w-10 h-10" />
             <span
@@ -26,7 +32,7 @@
           <p class="text-gray-400 text-sm leading-relaxed">
             {{ summaryShort }}
           </p>
-        </div>
+        </a>
 
         <!-- Social Links -->
         <div data-aos="fade-up" data-aos-delay="100" class="md:text-right">

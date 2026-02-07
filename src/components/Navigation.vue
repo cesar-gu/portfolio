@@ -7,7 +7,13 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
-        <div class="flex-shrink-0 relative" data-aos="fade-in" data-aos-duration="800">
+        <a
+          href="#main-content"
+          class="flex-shrink-0 relative"
+          data-aos="fade-in"
+          data-aos-duration="800"
+          :aria-label="`Ir a ${basics.brandName}`"
+        >
           <div
             class="absolute inset-0 bg-gradient-to-r from-primary-400/30 to-accent-orange/30 blur-xl rounded-full"
             aria-hidden="true"
@@ -17,7 +23,7 @@
           >
             {{ basics.brandName }}
           </span>
-        </div>
+        </a>
 
         <!-- Links -->
         <div class="hidden lg:flex gap-8">
