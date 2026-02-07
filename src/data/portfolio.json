@@ -71,7 +71,7 @@
       "position": "Cofundador e Ingeniero de Software",
       "startDate": "2021-02",
       "endDate": "2023-12",
-      "summary": "Desarrollo de una plataforma multiplataforma para gestionar backoffice de puntos de ocio y aplicación móvil para promocionar lugares de ocio.",
+      "summary": "Desarrollo integral multiplataforma para gestionar backoffice de puntos de ocio y aplicación móvil para promocionar lugares de ocio.",
       "highlights": [
         "Desarrollo web con Vue.js, Redux y TypeScript",
         "Autenticación JWT",
@@ -237,7 +237,7 @@
   "expertise": {
     "startOfExperience": 2018,
     "technologiesMastered": 15,
-    "projectsCompleted": 20
+    "projectsCompleted": 25
   },
   "trainings": [
     "Desarrollo con IA y GitHub Copilot",
@@ -262,8 +262,8 @@
       "featured": true,
       "highlights": [
         "Análisis en tiempo real mediante API de Lighthouse",
-        "Interfaz intuitiva para usuarios no técnicos",
         "Visualización de métricas de rendimiento, accesibilidad y SEO",
+        "Interfaz intuitiva para usuarios no técnicos",
         "Generación de reportes detallados"
       ],
       "technologies": ["Astro", "Vue", "Tailwind CSS", "Lighthouse API"]

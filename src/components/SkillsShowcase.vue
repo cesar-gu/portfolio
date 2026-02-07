@@ -78,7 +78,7 @@
           >
             {{ expertise.technologiesMastered }}+
           </div>
-          <p class="text-gray-700 font-medium">Tecnologías utilizadas</p>
+          <p class="text-gray-700 font-medium">Tecnologías dominadas</p>
         </Card>
 
         <!-- Card 3 -->
