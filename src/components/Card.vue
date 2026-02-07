@@ -51,9 +51,9 @@ const borderColorClass = computed(() => {
     case 'primary':
       return 'hover:border-primary-300 hover:shadow-lg hover:-translate-y-2';
     case 'orange':
-      return 'hover:border-accent-orange/300 hover:shadow-lg hover:-translate-y-2';
+      return 'hover:border-accent-orange/100 hover:shadow-lg hover:-translate-y-2';
     case 'green':
-      return 'hover:border-accent-green/300 hover:shadow-lg hover:-translate-y-2';
+      return 'hover:border-accent-green/100 hover:shadow-lg hover:-translate-y-2';
     default:
       return 'hover:border-primary-300 hover:shadow-lg hover:-translate-y-2';
   }

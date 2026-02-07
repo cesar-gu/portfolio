@@ -53,43 +53,61 @@
         </Card>
       </div>
 
+      <!-- Expertise Section Title -->
+      <div data-aos="fade-up" data-aos-delay="150">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">
+          <span class="sr-only">Experiencia profesional</span>
+          <span aria-hidden="true">🎯</span>
+          <span
+            class="bg-gradient-to-r from-primary-600 to-accent-orange bg-clip-text text-transparent"
+          >
+            Indicadores clave
+          </span>
+        </h3>
+      </div>
+
       <!-- Expertise Highlights -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="300">
         <!-- Card 1 -->
         <Card border-color="primary" data-aos-delay="300" :custom-classes="['text-center']">
-          <div
-            class="text-5xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent mb-3"
-            aria-label="Años de experiencia"
-          >
-            {{ new Date().getFullYear() - expertise.startOfExperience }}+
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <IconCalendar class="w-8 h-8 text-primary-600 flex-shrink-0" />
+            <div
+              class="text-3xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent"
+              aria-label="Años de experiencia"
+            >
+              {{ new Date().getFullYear() - expertise.startOfExperience }}+
+            </div>
           </div>
-          <p class="text-gray-700 font-medium">Años de experiencia Frontend</p>
+          <p class="text-gray-700 font-medium text-sm">Años de experiencia</p>
         </Card>
 
         <!-- Card 2 -->
         <Card border-color="orange" data-aos-delay="350" :custom-classes="['text-center']">
-          <div
-            class="text-5xl font-bold bg-gradient-to-r from-accent-orange to-accent-orange/70 bg-clip-text text-transparent mb-3"
-            aria-label="Tecnologías dominadas"
-          >
-            {{ expertise.technologiesMastered }}+
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <IconBadgeCheck class="w-8 h-8 text-accent-orange flex-shrink-0" />
+            <div
+              class="text-3xl font-bold bg-gradient-to-r from-accent-orange to-accent-orange/70 bg-clip-text text-transparent"
+              aria-label="Tecnologías dominadas"
+            >
+              {{ expertise.technologiesMastered }}+
+            </div>
           </div>
-          <p class="text-gray-700 font-medium">Tecnologías dominadas</p>
+          <p class="text-gray-700 font-medium text-sm">Tecnologías dominadas</p>
         </Card>
 
         <!-- Card 3 -->
         <Card border-color="green" data-aos-delay="400" :custom-classes="['text-center']">
-          <div
-            class="text-5xl font-bold bg-gradient-to-r from-accent-green to-accent-green/70 bg-clip-text text-transparent mb-3"
-            aria-label="Proyectos realizados"
-          >
-            {{ expertise.projectsCompleted }}+
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <IconClipboardCheck class="w-8 h-8 text-accent-green flex-shrink-0" />
+            <div
+              class="text-3xl font-bold bg-gradient-to-r from-accent-green to-accent-green/70 bg-clip-text text-transparent"
+              aria-label="Proyectos realizados"
+            >
+              {{ expertise.projectsCompleted }}+
+            </div>
           </div>
-          <p class="text-gray-700 font-medium">Proyectos realizados</p>
+          <p class="text-gray-700 font-medium text-sm">Proyectos realizados</p>
         </Card>
       </div>
     </div>
@@ -100,6 +118,9 @@
 import type { PropType } from 'vue';
 import SectionHeader from './SectionHeader.vue';
 import Card from './Card.vue';
+import IconCalendar from './icons/IconCalendar.vue';
+import IconBadgeCheck from './icons/IconBadgeCheck.vue';
+import IconClipboardCheck from './icons/IconClipboardCheck.vue';
 import type { Skill, Expertise } from '../models/Skill';
 
 defineProps({
