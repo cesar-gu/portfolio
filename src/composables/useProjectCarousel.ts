@@ -24,6 +24,9 @@ export function useProjectCarousel(options: UseProjectCarouselOptions) {
   const currentIndex = ref(0);
   const itemsPerView = ref(initialItemsPerView);
   const startX = ref<number | null>(null);
+  const startY = ref<number | null>(null);
+
+  let debouncedResize: ReturnType<typeof debounce>;
 
   const maxIndex = computed(() => Math.max(0, total - itemsPerView.value));
   const showControls = computed(() => total > itemsPerView.value);
@@ -60,29 +63,35 @@ export function useProjectCarousel(options: UseProjectCarouselOptions) {
 
   const onTouchStart = (e: TouchEvent) => {
     startX.value = e.touches?.[0]?.clientX ?? null;
+    startY.value = e.touches?.[0]?.clientY ?? null;
   };
 
   const onTouchEnd = (e: TouchEvent) => {
-    if (startX.value == null) return;
+    if (startX.value == null || startY.value == null) return;
     const endX = e.changedTouches?.[0]?.clientX;
-    if (endX == null) return;
+    const endY = e.changedTouches?.[0]?.clientY;
+    if (endX == null || endY == null) return;
 
     const dx = endX - startX.value;
-    if (Math.abs(dx) > 50) {
+    const dy = endY - startY.value;
+
+    // Only perform swipe if horizontal movement is significantly greater than vertical movement
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
       e.preventDefault?.();
       dx < 0 ? next() : prev();
     }
     startX.value = null;
+    startY.value = null;
   };
 
   onMounted(() => {
     updateItemsPerView();
-    const debouncedResize = debounce(updateItemsPerView, 200);
+    debouncedResize = debounce(updateItemsPerView, 200);
     window.addEventListener('resize', debouncedResize, { passive: true });
   });
 
   onUnmounted(() => {
-    window.removeEventListener('resize', updateItemsPerView);
+    window.removeEventListener('resize', debouncedResize);
   });
 
   return {
