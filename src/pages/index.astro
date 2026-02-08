@@ -38,7 +38,7 @@ const sortedEducation = [...portfolio.education].sort(
   <head>
     <!-- Meta Tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- SEO -->
@@ -130,7 +130,7 @@ const sortedEducation = [...portfolio.education].sort(
     </style>
   </head>
 
-  <body class="antialiased">
+  <body class="antialiased bg-gray-900">
     <!-- Navigation -->
     <Navigation client:load basics={portfolio.basics} />
 
