@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950 text-white py-16 relative overflow-hidden border-t border-gray-800"
+    class="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950 text-gray-300 py-16 relative overflow-hidden border-t border-gray-800"
     role="contentinfo"
   >
     <!-- Background elements -->
@@ -36,7 +36,7 @@
 
         <!-- Social Links -->
         <div data-aos="fade-up" data-aos-delay="100" class="md:text-right">
-          <h3 class="text-lg font-bold mb-6 text-white">Conecta conmigo</h3>
+          <h3 class="text-lg font-bold mb-6">Conecta conmigo</h3>
           <div class="flex gap-4 md:justify-end" role="list">
             <SocialLink
               v-for="profile in basics.profiles"
