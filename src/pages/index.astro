@@ -59,15 +59,25 @@ const sortedEducation = [...portfolio.education].sort(
     <meta name="keywords" content={seoKeywords} />
     <meta name="author" content="César Gutiérrez" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0066cc" />
+
+    <!-- Preload LCP image (hero) -->
+    <link rel="preload" as="image" href={portfolio.basics.image} />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://cesar-gu.github.io/portfolio" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content={seoTitle} />
     <meta property="og:description" content={seoDescription} />
-    <meta property="og:image" content="https://cesar-gu.github.io/portfolio/images/profile.webp" />
+    <meta
+      property="og:image"
+      content="https://cesar-gu.github.io/portfolio/images/social-card.svg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://cesar-gu.github.io/portfolio" />
     <meta property="og:site_name" content="César Gutiérrez Portfolio" />
 
@@ -75,7 +85,10 @@ const sortedEducation = [...portfolio.education].sort(
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={seoTitle} />
     <meta name="twitter:description" content={seoDescription} />
-    <meta name="twitter:image" content="https://cesar-gu.github.io/portfolio/images/profile.webp" />
+    <meta
+      name="twitter:image"
+      content="https://cesar-gu.github.io/portfolio/images/social-card.svg"
+    />
 
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="XnaifBXWdkpbhO3Q4HGK0R6nkIV5nM4-Yxdln5NWb9Q" />
@@ -208,6 +221,32 @@ const sortedEducation = [...portfolio.education].sort(
         },
         description:
           'Ingeniero informático con 10+ años de experiencia en desarrollo Frontend. Especializado en Angular y Vue.',
+      })}
+    />
+
+    <!-- Additional structured data: WebSite + ContactPage -->
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        url: 'https://cesar-gu.github.io/portfolio',
+        name: 'César Gutiérrez Portfolio',
+        author: { '@type': 'Person', name: 'César Gutiérrez' },
+        publisher: { '@type': 'Organization', name: 'cesargú' },
+      })}
+    />
+
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ContactPage',
+        url: 'https://cesar-gu.github.io/portfolio',
+        name: 'Contacto - César Gutiérrez',
+        description: 'Página de contacto y enlaces a perfiles profesionales.',
       })}
     />
   </body>

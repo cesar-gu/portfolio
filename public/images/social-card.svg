@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="César Gutiérrez - Frontend Developer">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0066cc" />
+      <stop offset="100%" stop-color="#ff9500" />
+    </linearGradient>
+    <style>
+      .bg{fill:#0b1220}
+      .card{fill:url(#g)}
+      .title{font-family: 'Space Grotesk', sans-serif; font-size:56px; fill:#fff}
+      .subtitle{font-family: Inter, system-ui, sans-serif; font-size:28px; fill:#e6eef8}
+      .brand{font-family: Inter, system-ui, sans-serif; font-size:20px; fill:rgba(255,255,255,0.7)}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630" rx="24"/>
+  <g transform="translate(64,64)">
+    <rect x="0" y="0" width="1072" height="502" rx="20" class="card" opacity="0.95"/>
+    <g transform="translate(48,40)">
+      <text class="brand" x="0" y="28">César Gutiérrez — Portfolio</text>
+      <text class="title" x="0" y="110">Desarrollador Frontend</text>
+      <text class="subtitle" x="0" y="160">Angular • Vue • TypeScript</text>
+    </g>
+  </g>
+</svg>

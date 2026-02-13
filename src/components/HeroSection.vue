@@ -42,6 +42,9 @@
             :src="basics.image"
             :alt="`Foto de perfil de ${basics.name}, ${basics.specialization}`"
             class="relative h-72 w-60 md:h-96 md:w-80 rounded-full shadow-2xl object-cover animate-morph-pulse"
+            style="aspect-ratio: 5/6"
+            decoding="async"
+            fetchpriority="high"
           />
         </div>
       </div>
