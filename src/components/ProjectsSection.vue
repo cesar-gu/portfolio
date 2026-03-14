@@ -37,7 +37,7 @@
               role="listitem"
               :data-aos="'fade-up'"
               :data-aos-delay="idx * 50"
-              class="flex-shrink-0 px-2 py-1 w-full lg:w-1/2 xl:w-1/3"
+              class="flex-shrink-0 px-2 sm:px-3 py-1 w-full lg:w-1/2 xl:w-1/3"
             >
               <div class="h-full">
                 <ProjectCard :project="project" :delay="idx * 50" />
